@@ -1,0 +1,4 @@
+
+mmcv==1.2.7
+mmaction2==0.13.0
+soundfile>=0.12.1
