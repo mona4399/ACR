@@ -72,7 +72,7 @@ We follow the data layout used in [FeatureMixing](https://github.com/mona4399/Fe
 ```bash
 cd HMDB-rgb-flow
 python train_video_flow.py \ 
-    --dataset 'HMDB' --mfs_max 256 --datapath /path/to/HMDB51/ \
+    --dataset 'HMDB' --mfs_max 256 \
     --lr 1e-4 --bsz 16 --nepochs 50 --num_workers 10 --seed 0 \
     --use_single_pred \ 
     --save_best --save_checkpoint --datapath '/path/to/HMDB51/'
@@ -84,7 +84,7 @@ python train_video_flow.py \
 ```bash
 cd EPIC-rgb-flow
 python train_video_flow.py \ 
-    --datapath /path/to/EPIC-KITCHENS/ \
+    --dataset 'EPIC' \
     --lr 1e-4 --bsz 16 --nepochs 20 --num_workers 10 --seed 0 \
     --use_single_pred \ 
     --save_best --save_checkpoint --datapath '/path/to/EPIC-KITCHENS/'
@@ -96,7 +96,7 @@ python train_video_flow.py \
 ```bash
 cd HMDB-rgb-flow
 python train_video_flow.py \ 
-    --dataset 'HAC' --datapath /path/to/HAC/ \
+    --dataset 'HAC' \
     --lr 1e-4 --bsz 16 --nepochs 30 --num_workers 10 --seed 0 \
     --use_single_pred \ 
     --save_best --save_checkpoint --datapath '/path/to/HAC/'
@@ -108,7 +108,7 @@ python train_video_flow.py \
 ```bash
 cd HMDB-rgb-flow
 python train_video_flow.py \ 
-    --dataset 'Kinetics100' --datapath /path/to/Kinetics100/ \
+    --dataset 'Kinetics100' \
     --lr 1e-4 --bsz 16 --nepochs 50 --num_workers 10 --seed 0 \
     --use_single_pred \ 
     --save_best --save_checkpoint --datapath '/path/to/Kinetics100/'
